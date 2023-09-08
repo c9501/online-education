@@ -34,7 +34,9 @@ module.exports = {
       }
     ],
     'vue/no-setup-props-destructure': ['off'],
-    '@typescript-eslint/no-unused-vars': ['off']
+    '@typescript-eslint/no-unused-vars': ['off'],
+    // eslint-disable-next-line no-dupe-keys
+    'prettier/prettier': ['off']
   },
   parserOptions: {
     ecmaVersion: 'latest'
