@@ -6,7 +6,7 @@
       <van-tabbar-item icon="search" to="/category">分类</van-tabbar-item>
       <van-tabbar-item icon="friends-o" to="/article">阅读</van-tabbar-item>
       <van-tabbar-item icon="setting-o" to="/question">问答</van-tabbar-item>
-      <van-tabbar-item icon="setting-o">我的</van-tabbar-item>
+      <van-tabbar-item icon="setting-o" to="/my">我的</van-tabbar-item>
     </van-tabbar>
   </div>
 </template>

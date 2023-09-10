@@ -37,6 +37,12 @@ const router = createRouter({
           name:'question',
           component: () => import('@/views/Question/index.vue'),
           meta: { title: '问答' }
+        },
+        {
+          path: '/my',
+          name:'my',
+          component: () => import('@/views/My/index.vue'),
+          meta: { title: '我的' }
         }
       ]
     }

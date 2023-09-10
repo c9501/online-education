@@ -67,3 +67,27 @@ export type ArticleType = {
   userId:string |number
   viewCount :number
 }
+//阅读响应
+export type Questionres ={
+  total: number
+  records: QuestionType[]
+}
+//问答数据
+export type QuestionType = {
+  id: string | number
+  createDate: string
+  nickName: string
+  reply:number
+  status:number
+   thumhup:number
+  title:string
+  updateDate:string
+  userId:string |number
+  userImage:string
+  viewCount :number
+}
+//阅读请求
+export type Questionreq = {
+  current: number
+  size: number
+ }

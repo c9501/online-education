@@ -1,5 +1,5 @@
 import request from '@/utils/request'
-import type { Articlereq, Articleres, BannerType, CategoryType, SearchReq, SearchType } from './types/home'
+import type { Articlereq, Articleres, BannerType, CategoryType, Questionreq, Questionres, SearchReq, SearchType } from './types/home'
 //获取首页轮播图
 export const getBanner = () => {
   return request<BannerType[]>('article/api/advert/show/1', 'GET')
@@ -16,4 +16,7 @@ export const getSearchlist = (data: SearchReq) => {
 export const getArticle = (data: Articlereq) => {
   return request<Articleres>('article/api/article/search', 'POST', data)
 }
-
+//问答  question/api/question/hot
+export const getQuestion = (kwd:string,data: Questionreq) => {
+  return request<Questionres>('question/api/question/'+ kwd, 'POST', data)
+}
