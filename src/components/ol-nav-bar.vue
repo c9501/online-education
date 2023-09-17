@@ -1,7 +1,6 @@
 <template>
   <div class="navbar">
-    <div class="inp"><van-icon name="search" size="20"/>搜索你想要的内容</div>
-
+    <div class="inp" @click="$router.push('/search')"><van-icon name="search" size="20"/>搜索你想要的内容</div>
   </div>
 </template>
 

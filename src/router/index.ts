@@ -45,6 +45,18 @@ const router = createRouter({
           meta: { title: '我的' }
         }
       ]
+    },
+    {
+      path: '/search',
+      name:'search',
+      component: () => import('@/views/Search/index.vue'),
+      meta: { title: '搜索' }
+    },
+    {
+      path: '/course',
+      name:'course',
+      component: () => import('@/views/Course/index.vue'),
+      meta: { title: '购买' }
     }
   ]
 })

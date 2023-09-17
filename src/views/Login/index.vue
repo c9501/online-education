@@ -1,7 +1,7 @@
 <template>
   <div class="login-page">
     <div class="top">
-      <van-icon name="cross" />
+      <van-icon name="cross" @click="$router.back()"/>
     </div>
     <div class="listbox">
       <div class="titlebox">

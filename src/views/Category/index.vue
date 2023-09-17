@@ -10,7 +10,7 @@
         </van-sidebar>
       </div>
       <div class="rightbox">
-        <div class="itembox" v-for="ele in labelList" :key="ele.id">
+        <div class="itembox" v-for="ele in labelList" :key="ele.id" @click="$router.push('/search')">
           {{ ele.name }}
         </div>
       </div>

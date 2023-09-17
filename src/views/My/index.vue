@@ -2,8 +2,8 @@
   <div class="my-page">
     <div class="topbox">
       <div class="top"></div>
-      <div class="loginbox">
-        <div class="l"> <img src="http://m.mengxuegu.com/static/logo.png" alt=""><span>请登录</span></div>
+      <div class="loginbox" @click="$router.push('/login')">
+        <div class="l"> <img src="http://m.mengxuegu.com/static/logo.png" ><span>请登录</span></div>
         <van-icon name="arrow" />
       </div>
 

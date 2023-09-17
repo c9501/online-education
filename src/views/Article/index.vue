@@ -65,7 +65,6 @@ onMounted(async () => {
   .van-tab--active {
     color: #007aff;
   }
-
 }
 
 .itembox {

@@ -2,7 +2,7 @@
   <div class="home-page">
     <div class="banner-box">
       <div class="head">
-        <div class="inp"><van-icon name="search" />搜索你想要的内容</div>
+        <div class="inp"  @click="$router.push('/search')"><van-icon name="search" />搜索你想要的内容</div>
       </div>
       <van-swipe :autoplay="3000" lazy-render>
         <van-swipe-item v-for="(item, index) in bannerlist" :key="index">
@@ -11,7 +11,7 @@
       </van-swipe>
     </div>
     <div class="category-box">
-      <div class="itembox" v-for="(item, index) in categorylist?.slice(0, 7)" :key="index">
+      <div class="itembox" v-for="(item, index) in categorylist?.slice(0, 7)" :key="index" @click="$router.push('/search')">
         {{ item.name }}
       </div>
       <div class="itembox">全部分类</div>
@@ -20,7 +20,7 @@
       <van-cell title="热门推荐" is-link value="全部" />
       <div class="hotbox">
 
-        <div class="ibox" v-for="item in hotlist" :key="item.id">
+        <div class="ibox" v-for="item in hotlist" :key="item.id" @click="$router.push('/course')">
           <div class="lbox"> <img :src="item.mainImage.includes('http')
             ? item.mainImage
             : 'http://m.mengxuegu.com' + item.mainImage
@@ -43,7 +43,7 @@
       </div>
       <van-cell title="近期上新" is-link value="全部" />
       <div class="newbox">
-        <div class="ibox" v-for="item in newlist" :key="item.id">
+        <div class="ibox" v-for="item in newlist" :key="item.id"  @click="$router.push('/course')">
           <div class="lbox"> <img :src="item.mainImage.includes('http')
             ? item.mainImage
             : 'http://m.mengxuegu.com' + item.mainImage
@@ -67,7 +67,7 @@
       <van-cell title="免费精选" is-link value="全部" />
       <div class="freebox">
 
-        <div class="ibox" v-for="item in freelist" :key="item.id">
+        <div class="ibox" v-for="item in freelist" :key="item.id"  @click="$router.push('/course')">
           <div class="lbox"> <img :src="item.mainImage.includes('http')
             ? item.mainImage
             : 'http://m.mengxuegu.com' + item.mainImage
@@ -93,7 +93,7 @@
       <van-cell title="付费精品" is-link value="全部" />
       <div class="costbox">
 
-        <div class="ibox" v-for="item in costlist" :key="item.id">
+        <div class="ibox" v-for="item in costlist" :key="item.id"  @click="$router.push('/course')">
           <div class="lbox"> <img :src="item.mainImage.includes('http')
             ? item.mainImage
             : 'http://m.mengxuegu.com' + item.mainImage
